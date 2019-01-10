@@ -1,3 +1,7 @@
 def scrabble_score(scrabble)
-  0
+  if scrabble == 'a'
+    1
+  else
+    0
+  end
 end
