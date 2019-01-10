@@ -1,7 +1,7 @@
 def scrabble_score(scrabble)
   val = 0
   case scrabble
-  when '',' \t\n',nil
+  when '', ' \t\n', nil
     return 0
   end
   scrabble = scrabble.downcase
@@ -10,13 +10,19 @@ def scrabble_score(scrabble)
 
     when 'a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't'
       val = val + 1
-    when 'f','y'
+    when 'd','g'
+      val = val + 2
+    when 'b','c','m','p'
+      val = val + 3
+    when 'f', 'y','h','v','w'
       val = val + 4
     when 'k'
       val = val + 5
-    when 'q'
+    when 'x','j'
+      val = val + 8
+    when 'q','z'
       val = val + 10
-      end
+    end
   end
   val
 end
