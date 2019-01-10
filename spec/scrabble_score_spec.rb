@@ -24,4 +24,8 @@ describe "scrabble_score" do
   it "test_simple_words" do
     expect(scrabble_score('street')).to eq 6
   end
+
+  it "test_complicated_words" do
+    expect(scrabble_score('quirky')).to eq 22
+  end
 end

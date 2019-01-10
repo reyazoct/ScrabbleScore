@@ -10,9 +10,13 @@ def scrabble_score(scrabble)
 
     when 'a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't'
       val = val + 1
-    when 'f'
+    when 'f','y'
       val = val + 4
-    end
+    when 'k'
+      val = val + 5
+    when 'q'
+      val = val + 10
+      end
   end
   val
 end
