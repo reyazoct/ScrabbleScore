@@ -9,4 +9,7 @@ describe "scrabble_score" do
     expect(scrabble_score(' \t\n')).to eq 0
   end
 
+  it "test_whitespace_word" do
+    expect(scrabble_score(nil)).to eq 0
+  end
 end
