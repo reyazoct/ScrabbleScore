@@ -32,4 +32,8 @@ describe "scrabble_score" do
   it "test_case_insensitive_words" do
     expect(scrabble_score('OXYPHENBUTAZONE')).to eq 41
   end
+
+  it "test_convenient" do
+    expect(scrabble_score('alacrity')).to eq 13
+  end
 end
