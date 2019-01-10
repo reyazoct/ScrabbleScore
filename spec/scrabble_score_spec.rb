@@ -20,4 +20,8 @@ describe "scrabble_score" do
   it "test_other_very_short_word" do
     expect(scrabble_score('f')).to eq 4
   end
+
+  it "test_simple_words" do
+    expect(scrabble_score('street')).to eq 6
+  end
 end
