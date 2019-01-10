@@ -25,4 +25,5 @@ def scrabble_score(scrabble)
     end
   end
   val
+  #I'm a comment line
 end
