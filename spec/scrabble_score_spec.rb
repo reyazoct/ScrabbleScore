@@ -16,4 +16,8 @@ describe "scrabble_score" do
   it "test_very_short_word" do
     expect(scrabble_score('a')).to eq 1
   end
+
+  it "test_other_very_short_word" do
+    expect(scrabble_score('f')).to eq 4
+  end
 end
