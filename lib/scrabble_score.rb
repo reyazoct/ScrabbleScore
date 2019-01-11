@@ -22,8 +22,9 @@ def scrabble_score(scrabble)
       val = val + 8
     when 'q','z'
       val = val + 10
+    else
+      skip
     end
   end
   val
-  #I'm a comment line
 end
